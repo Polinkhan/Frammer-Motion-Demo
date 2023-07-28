@@ -1,5 +1,4 @@
-import { BoxProps, StyleProps } from "@chakra-ui/react";
-import { motion, AnimationProps } from "framer-motion";
+import { motion } from "framer-motion";
 
 const animations = {
   initial: { opacity: 0, x: 10 },
@@ -7,11 +6,11 @@ const animations = {
   exit: { opacity: 0, x: -10 },
 };
 
-interface CuntomAnimatedPage extends AnimationProps {
-  style?: StyleProps;
-}
+// interface CuntomAnimatedPage extends AnimationProps {
+//   style?: StyleProps;
+// }
 
-const AnimatedPage = (props: CuntomAnimatedPage) => {
+const AnimatedPage = (props: any) => {
   return (
     <motion.div
       variants={animations}

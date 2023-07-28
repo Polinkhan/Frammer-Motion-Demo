@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
 import RootRouter from "./App/Router/RootRouter";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -6,9 +6,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 function App() {
   return (
     <ChakraProvider>
-      <BrowserRouter>
+      <HashRouter>
         <RootRouter />
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   );
 }

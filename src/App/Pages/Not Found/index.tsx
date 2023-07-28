@@ -1,12 +1,17 @@
 "use client";
 
-import { Box, Heading, Text, Button, Flex, VStack } from "@chakra-ui/react";
+import { Heading, Text, Button, VStack } from "@chakra-ui/react";
 import AnimatedPage from "../../Components/AnimatedPage";
 
 export default function NotFound() {
   return (
     <AnimatedPage
-      style={{ height: "100%", display: "flex", justifyContent: "center" }}
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
     >
       <VStack
         justifyContent={"center"}
